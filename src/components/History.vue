@@ -14,6 +14,7 @@
         <li>美宣—柯欣妤</li>
       </ul>
     </div>
+    <h2>歷屆幹部</h2>
     <div class="managers">
       <h3>108級資訊管理系學會</h3>
       <ul>
@@ -259,24 +260,35 @@
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
+  text-align: center;
   font-family: "Noto Sans TC", sans-serif;
-  color: rgb(15, 35, 225);
   background: linear-gradient(35deg, #0fa, #abc);
 }
 
+h2 {
+  width: 100%;
+  color: #fefefe;
+}
+
 .managers {
-  width: 250px;
+  width: 300px;
+  padding: 10px;
+  margin: 5px;
+  color: rgba(15, 35, 35, 0.9);
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 .active {
   width: 100%;
   padding: 50px 0;
-  color: rgb(195, 255, 175);
-  background: rgb(102, 125, 175);
-  text-align: center;
+  color: rgb(255, 255, 255);
+  background: rgb(102, 125, 125);
+  margin: 10px 30px;
 }
 
-.active ul {
+.managers ul {
   list-style: none;
   padding: 0;
   margin: 0 auto;

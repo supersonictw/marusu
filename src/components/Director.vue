@@ -1,6 +1,7 @@
 <template>
   <div id="director">
     <div class="card">
+      <h2>系主任的話</h2>
       <p>
         親愛的同學您好，
       </p>
