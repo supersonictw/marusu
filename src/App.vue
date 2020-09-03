@@ -2,7 +2,7 @@
   <div>
     <div id="header">
       <router-link to="/">
-        <img id="logo" src="@/assets/logo.webp" />
+        <img id="logo" src="@/assets/logo.png" />
       </router-link>
       <div id="title">
         <h1>{{ title.current.major }}</h1>
@@ -32,13 +32,13 @@
       </div>
       <div id="sns-list">
         <a title="Facebook" href="https://www.facebook.com/NKUSTICSA">
-          <img alt="Facebook" src="@/assets/sns/facebook.webp" />
+          <img alt="Facebook" src="@/assets/sns/facebook.png" />
         </a>
         <a title="Instagram" href="https://www.instagram.com/109th_ic">
-          <img alt="Instagram" src="@/assets/sns/instagram.webp" />
+          <img alt="Instagram" src="@/assets/sns/instagram.png" />
         </a>
         <a title="LINE" href="https://nav.cx/eIuGlgR">
-          <img alt="LINE" src="@/assets/sns/line.webp" />
+          <img alt="LINE" src="@/assets/sns/line.png" />
         </a>
       </div>
     </div>

@@ -25,6 +25,7 @@
 #wrapper {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   padding: 30px 0px;
   text-align: center;
   background: rgba(225, 225, 225, 0.5);
@@ -36,7 +37,7 @@ a {
 
 .wrapper-item {
   width: 150px;
-  padding: 75px 10px;
+  padding: 75px 0;
   margin: 60px 15px;
   border: 1px rgba(0, 0, 0, 0.2) solid;
   border-radius: 10px;
