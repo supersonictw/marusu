@@ -8,9 +8,9 @@
         <h1>{{ title.current.major }}</h1>
         <p>{{ title.current.minor }}</p>
       </div>
-      <div class="dropdown">
-        <div title="Menu" id="menu-opener">=</div>
-        <nav>
+      <div @mouseleave="menuOpener(false)" class="dropdown">
+        <div title="Menu" @click="menuOpener" id="menu-opener">=</div>
+        <nav v-show="displayMenu" id="menu">
           <a
             v-for="(item, itemId) in menu"
             :key="itemId"
@@ -49,6 +49,7 @@
 export default {
   data() {
     return {
+      displayMenu: false,
       title: {
         pc: {
           major: "國立高雄科技大學 智慧商務系學會",
@@ -79,8 +80,12 @@ export default {
       this.title.current =
         window.innerWidth > 950 ? this.title.pc : this.title.mobile;
     },
+    menuOpener(specify = null) {
+      this.displayMenu = specify === null ? !this.displayMenu : specify;
+    },
     menuHanle(routeName) {
       this.$router.push({ name: routeName });
+      this.displayMenu = false;
     },
   },
   created() {
@@ -137,7 +142,7 @@ export default {
 }
 
 nav {
-  display: none;
+  display: block;
   position: absolute;
   width: 300px;
   max-height: 500px;
@@ -162,19 +167,15 @@ nav {
 }
 
 nav a {
+  display: block;
   color: black;
   padding: 10px;
   text-decoration: none;
   border-radius: 10px;
-  display: block;
 }
 
 nav a:hover {
   background-color: #ddd;
-}
-
-.dropdown:hover nav {
-  display: block;
 }
 
 #copyright {

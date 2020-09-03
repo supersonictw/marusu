@@ -3,6 +3,9 @@
     <div id="banner">
       <h2>Intelligent Commerce</h2>
       <p>Student Association</p>
+      <div class="flow red"></div>
+      <div class="flow green"></div>
+      <div class="flow blue"></div>
     </div>
     <div id="wrapper">
       <div id="plans">
@@ -41,6 +44,61 @@
   border-bottom: 1px rgba(0, 0, 0, 0.5) solid;
 }
 
+.flow {
+  position: absolute;
+  width: 30%;
+  height: 30px;
+  margin-top: 30px;
+}
+
+.flow.red {
+  left: 30%;
+  background: #f00;
+  animation-name: flow-red;
+  animation-duration: 7s;
+}
+
+@keyframes flow-red {
+  from {
+    left: 0;
+  }
+  to {
+    left: 30%;
+  }
+}
+
+.flow.green {
+  left: 50%;
+  background: #0f0;
+  animation-name: flow-green;
+  animation-duration: 5s;
+}
+
+@keyframes flow-green {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+.flow.blue {
+  left: 70%;
+  background: #00f;
+  animation-name: flow-blue;
+  animation-duration: 2s;
+}
+
+@keyframes flow-blue {
+  from {
+    left: 0;
+  }
+  to {
+    left: 70%;
+  }
+}
+
 #wrapper {
   display: flex;
   height: 350px;
@@ -52,6 +110,7 @@
 
 #wrapper div {
   width: 300px;
+  margin: 0 auto;
 }
 
 #info {
@@ -85,5 +144,12 @@
 
 #info .link:active {
   background: #aaa;
+}
+
+@media screen and (max-width: 950px) {
+  #banner {
+    padding: 150px 50px;
+    padding-top: 50px;
+  }
 }
 </style>

@@ -259,6 +259,7 @@
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
+  font-family: "Noto Sans TC", sans-serif;
   color: rgb(15, 35, 225);
   background: linear-gradient(35deg, #0fa, #abc);
 }
@@ -276,10 +277,22 @@
 }
 
 .active ul {
-  width: 250px;
   list-style: none;
   padding: 0;
   margin: 0 auto;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 950px) {
+  .managers {
+    text-align: center;
+  }
+
+  .managers ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
 }
 </style>
