@@ -2,7 +2,7 @@
   <div>
     <div id="header">
       <router-link to="/">
-        <img id="logo" src="@/assets/logo.png" />
+        <img id="logo" src="/static/logo.png" />
       </router-link>
       <div id="title">
         <h1>{{ title.current.major }}</h1>
@@ -26,19 +26,19 @@
       <router-view class="child-view" />
     </div>
     <div id="footer">
-      109學年智慧商務系學會 辦公地點：MA302A
+      國立高雄科技大學 系學會網站系統 辦公地點：[Office Addresses]
       <div id="copyright">
-        Copyright&copy; 2020 NKUST IC All Rights Reserved.
+        Copyright&copy; 2020 <a href="https://github.com/supersonictw">SuperSonic</a> All Rights Reserved.
       </div>
       <div id="sns-list">
-        <a title="Facebook" href="https://www.facebook.com/NKUSTICSA">
+        <a title="Facebook" href="https://www.facebook.com/">
           <img alt="Facebook" src="@/assets/sns/facebook.png" />
         </a>
-        <a title="Instagram" href="https://www.instagram.com/109th_ic">
+        <a title="Instagram" href="https://www.instagram.com/">
           <img alt="Instagram" src="@/assets/sns/instagram.png" />
         </a>
-        <a title="LINE" href="https://nav.cx/eIuGlgR">
-          <img alt="LINE" src="@/assets/sns/line.png" />
+        <a title="LINE@" href="https://line.me/">
+          <img alt="LINE@" src="@/assets/sns/line.png" />
         </a>
       </div>
     </div>
@@ -52,13 +52,13 @@ export default {
       displayMenu: false,
       title: {
         pc: {
-          major: "國立高雄科技大學 智慧商務系學會",
+          major: "國立高雄科技大學 系學會網站系統",
           minor:
-            "National Kaohsiung University of Science and Technology Department of Intelligent Commerce",
+            "National Kaohsiung University of Science and Technology Web Content Management System for Department Student Association",
         },
         mobile: {
           major: "國立高雄科技大學",
-          minor: "智慧商務系學會",
+          minor: "系學會網站系統",
         },
         current: {
           major: "",

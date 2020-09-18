@@ -26,7 +26,7 @@ app.get("*", (req, res) => {
 
 app.listen(port, () => {
   console.log(`
-    NKUST ICSA - API Server is listening on
+    NKUST DSA - API Server is listening on
     http://localhost:${port}
   `);
 });

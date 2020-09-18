@@ -1,7 +1,7 @@
 <template>
   <div id="fresh">
     <div id="banner">
-      <h2>歡迎加入智慧商務系</h2>
+      <h2>歡迎加入XX學系</h2>
       <p>這裡是新生專區(๑•̀ㅂ•́)و✧</p>
     </div>
     <div id="wrapper">

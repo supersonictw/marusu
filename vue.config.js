@@ -2,7 +2,7 @@
 module.exports = {
     pages: {
         index: {
-            title: 'NKUST - ICSA',
+            title: 'NKUST - DSA',
             entry: 'src/main.js',
             template: 'public/index.html',
             filename: 'index.html',
