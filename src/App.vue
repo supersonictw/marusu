@@ -28,7 +28,9 @@
     <div id="footer">
       國立高雄科技大學 系學會網站系統 辦公地點：[Office Addresses]
       <div id="copyright">
-        Copyright&copy; 2020 <a href="https://github.com/supersonictw">SuperSonic</a> All Rights Reserved.
+        Copyright&copy; 2020
+        <a href="https://github.com/supersonictw">SuperSonic</a> All Rights
+        Reserved.
       </div>
       <div id="sns-list">
         <a title="Facebook" href="https://www.facebook.com/">
@@ -65,13 +67,7 @@ export default {
           minor: "",
         },
       },
-      menu: [
-        "系網首頁",
-        "新生專區",
-        "系會介紹",
-        "歷屆幹部",
-        "組織章程",
-      ],
+      menu: ["系網首頁", "新生專區", "系會介紹", "歷屆幹部", "組織章程"],
     };
   },
   methods: {
@@ -119,6 +115,7 @@ export default {
 #logo {
   width: 150px;
   height: auto;
+  margin-left: 15px;
 }
 
 #title {

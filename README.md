@@ -1,7 +1,7 @@
 # NKUST DSA
 國立高雄科技大學 系學會 網站系統 
 
-![Logo](public/static/logo.png)
+![Logo](public/static/logo.jpg)
 
 ## 你是高科人嗎
 這是一套專屬於[國立高雄科技大學](https://www.nkust.edu.tw)的網站管理系統！
